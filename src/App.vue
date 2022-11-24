@@ -2,20 +2,26 @@
   <div>
     <HeaderPart />
     <MainPart />
-    <FooterPart />
+    <FooterPartIcon />
+    <FooterPartLink />
+    <FooterPartSocial />
   </div>
 </template>
 
 <script>
 import HeaderPart from '@/components/HeaderPart.vue';
 import MainPart from '@/components/MainPart.vue';
-import FooterPart from '@/components/FooterPart.vue';
+import FooterPartIcon from '@/components/FooterPartIcon.vue';
+import FooterPartLink from '@/components/FooterPartLink.vue';
+import FooterPartSocial from '@/components/FooterPartSocial.vue';
 
 export default {
   components: {
     HeaderPart,
     MainPart,
-    FooterPart,
+    FooterPartIcon,
+    FooterPartLink,
+    FooterPartSocial,
   },
 };
 </script>
@@ -27,13 +33,19 @@ export default {
     box-sizing: border-box;
   }
 
+  body {
+    height: 100vh;
+  }
+
   .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 80%;
     height: 100%;
     margin: auto;
+  }
+
+  li {
+    list-style: none;
   }
 
   a {

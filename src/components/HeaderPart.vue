@@ -18,7 +18,7 @@
 
 <script>
 export default {
-
+  name: 'HeaderPart',
 };
 </script>
 
@@ -49,6 +49,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
     height: 100%;
   }
