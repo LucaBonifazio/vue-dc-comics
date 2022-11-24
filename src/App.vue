@@ -21,5 +21,22 @@ export default {
 </script>
 
 <style lang="scss">
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
 </style>
