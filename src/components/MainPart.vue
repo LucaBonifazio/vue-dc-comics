@@ -1,6 +1,8 @@
 <template>
-  <div class="container">
-    <a href="#!">Content goes here</a>
+  <div class="bg_container">
+    <div class="main_content container">
+      <a href="#!">Content goes here</a>
+    </div>
   </div>
 </template>
 
@@ -11,13 +13,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-    height: 500px;
-    text-align: center;
-    background-color: black;
-  }
-  a {
-    color: white;
-  }
+.bg_container{
+  background-color: black;
+}
+.main_content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 677px;
+}
+a {
+  color: white;
+}
 
 </style>
