@@ -143,6 +143,9 @@ img {
   height: 350px;
   object-fit: contain;
   object-position: center;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 </style>
