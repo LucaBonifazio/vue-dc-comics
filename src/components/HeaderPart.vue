@@ -56,7 +56,7 @@ img {
   height: 100%;
   color: rgb(0, 0, 0);
   &:hover{
-    color: rgb(0, 132, 255);
+    color:  #0282F9;
     background-color: rgb(207, 235, 253);
   }
   }

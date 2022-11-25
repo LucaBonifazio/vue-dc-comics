@@ -58,7 +58,7 @@ export default {
   gap: 1em;
 }
 .follow_link{
-  color: rgb(0, 145, 230);
+  color:  #0282F9;
   font-size: 15px;
   font-weight: bold;
   &:hover {

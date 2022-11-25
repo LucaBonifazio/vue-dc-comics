@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
   .bg_container{
-    background-color: rgb(45, 124, 241);
+    background-color: #0282F9;
   }
   .navbar_down{
     display: flex;
