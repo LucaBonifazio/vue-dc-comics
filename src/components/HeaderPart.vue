@@ -1,18 +1,11 @@
 <template>
   <div class="bg_container">
     <div class="navbar container">
-      <a href="@!"><img src="@/components/img/dc-logo.png" alt="logo"></a>
+      <a href="#!"> <img src="@/components/img/dc-logo.png" alt="logo" /></a>
       <div class="navbar_list">
-        <a href="#!">CHARACTERS</a>
-        <a href="#!">COMICS</a>
-        <a href="#!">MOVIES</a>
-        <a href="#!">TV</a>
-        <a href="#!">GAMES</a>
-        <a href="#!">COLLECTIBLES</a>
-        <a href="#!">VIDEOS</a>
-        <a href="#!">FANS</a>
-        <a href="#!">NEWS</a>
-        <a href="#!">SHOP</a>
+        <ul>
+          <li v-for="item in listItems" :key="item.text"><a href="#!">{{item.text}}</a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -21,6 +14,48 @@
 <script>
 export default {
   name: 'HeaderPart',
+  data() {
+    return {
+      listItems: [
+        {
+          url: '#COMICS',
+          text: 'COMICS',
+        },
+        {
+          url: '#MOVIES',
+          text: 'MOVIES',
+        },
+        {
+          url: '#TV',
+          text: 'TV',
+        },
+        {
+          url: '#GAMES',
+          text: 'GAMES',
+        },
+        {
+          url: '#COLLECTIBLES',
+          text: 'COLLECTIBLES',
+        },
+        {
+          url: '#VIDEOS',
+          text: 'VIDEOS',
+        },
+        {
+          url: '#FANS',
+          text: 'FANS',
+        },
+        {
+          url: '#NEWS',
+          text: 'NEWS',
+        },
+        {
+          url: '#SHOP',
+          text: 'SHOP',
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -49,17 +84,30 @@ img {
   flex-wrap: wrap;
   gap: 1rem;
   height: 100%;
-  a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: rgb(0, 0, 0);
-  &:hover{
-    color:  #0282F9;
-    background-color: rgb(207, 235, 253);
-  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 .3em;
+      height: 100%;
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #000000;
+        &:hover {
+          color: rgb(0, 157, 255);
+          background-color: rgb(207, 235, 253);
+        }
+      }
+    }
   }
 }
-
 </style>

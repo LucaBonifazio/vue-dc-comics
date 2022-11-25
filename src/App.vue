@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <HeaderPart />
     <MainPart />
     <FooterPartIcon />
@@ -16,7 +16,6 @@ import FooterPartLink from '@/components/FooterPartLink.vue';
 import FooterPartSocial from '@/components/FooterPartSocial.vue';
 
 export default {
-  name: 'app',
   components: {
     HeaderPart,
     MainPart,
@@ -32,10 +31,6 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  #app {
-    height: 100vh;
   }
 
   .container {

@@ -5,11 +5,11 @@
       <div class="social_box">
         <div class="follow_link">FOLLOW US</div>
         <div class="social_icon">
-          <img src="@/components/img/footer-facebook.png" alt="social">
-          <img src="@/components/img/footer-twitter.png" alt="social">
-          <img src="@/components/img/footer-youtube.png" alt="social">
-          <img src="@/components/img/footer-pinterest.png" alt="social">
-          <img src="@/components/img/footer-periscope.png" alt="social">
+          <img src="@/components/img/footer-facebook.png" alt="social" />
+          <img src="@/components/img/footer-twitter.png" alt="social" />
+          <img src="@/components/img/footer-youtube.png" alt="social" />
+          <img src="@/components/img/footer-pinterest.png" alt="social" />
+          <img src="@/components/img/footer-periscope.png" alt="social" />
         </div>
       </div>
     </div>
@@ -50,15 +50,15 @@ export default {
   }
 }
 
-.social_box{
+.social_box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
   gap: 1em;
 }
-.follow_link{
-  color:  #0282F9;
+.follow_link {
+  color: #0282f9;
   font-size: 15px;
   font-weight: bold;
   &:hover {
@@ -66,12 +66,12 @@ export default {
   }
 }
 
-.social_icon{
+.social_icon {
   display: flex;
   gap: 1em;
-  img{
+  img {
     &:hover {
-    transform: scale(1.2);
+      transform: scale(1.2);
     }
   }
 }
