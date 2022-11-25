@@ -133,6 +133,9 @@ ul {
 a {
   color: rgb(136, 136, 136);
   font-size: 12px;
+  &:hover {
+    color: white;
+  }
 }
 
 img {

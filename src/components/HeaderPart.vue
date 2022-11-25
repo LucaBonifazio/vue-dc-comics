@@ -1,7 +1,7 @@
 <template>
   <div class="bg_container">
     <div class="navbar container">
-      <img src="@/components/img/dc-logo.png" alt="logo">
+      <a href="@!"><img src="@/components/img/dc-logo.png" alt="logo"></a>
       <div class="navbar_list">
         <a href="#!">CHARACTERS</a>
         <a href="#!">COMICS</a>
@@ -25,17 +25,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: rgb(0, 0, 0);
-  &:hover{
-    color: rgb(0, 132, 255);
-    background-color: rgb(207, 235, 253);
-  }
-}
 .navbar {
   display: flex;
   align-items: center;
@@ -46,6 +35,12 @@ export default {
 img {
   width: 70px;
   height: 70px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+    transform: rotate(-45deg);
+    transition: transform 0.5s ease-in-out;
+  }
 }
 .navbar_list {
   display: flex;
@@ -54,6 +49,17 @@ img {
   flex-wrap: wrap;
   gap: 1rem;
   height: 100%;
+  a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  &:hover{
+    color: rgb(0, 132, 255);
+    background-color: rgb(207, 235, 253);
+  }
+  }
 }
 
 </style>

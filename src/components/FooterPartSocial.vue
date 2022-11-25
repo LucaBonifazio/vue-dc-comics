@@ -1,7 +1,7 @@
 <template>
   <div class="bg_container">
     <div class="footer_social container">
-      <div class="btn">SIGN-UP NOW!</div>
+      <div class="btn"><a>SIGN-UP NOW!</a></div>
       <div class="social_box">
         <div class="follow_link">FOLLOW US</div>
         <div class="social_icon">
@@ -42,6 +42,12 @@ export default {
   height: 40px;
   border: 3px solid rgb(0, 143, 179);
   color: white;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+    background-color: rgb(206, 206, 206);
+    color: black;
+  }
 }
 
 .social_box{
@@ -55,10 +61,18 @@ export default {
   color: rgb(0, 145, 230);
   font-size: 15px;
   font-weight: bold;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .social_icon{
   display: flex;
   gap: 1em;
+  img{
+    &:hover {
+    transform: scale(1.2);
+    }
+  }
 }
 </style>
